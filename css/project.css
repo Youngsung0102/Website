@@ -268,7 +268,7 @@ img[src*="OPCUACloud.png"] {
 }
 
 .project-content-grid {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -1751,7 +1751,7 @@ img[src*="OPCUACloud.png"] {
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
