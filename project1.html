@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cloud Based Manufacturing via OPCUA - Youngsung Song</title>
+    <title>Automated Process Planning for Manufacturing as a Service</title>
     <meta name="description" content="Developing a cloud-based MaaS system to automate manufacturing service requests through OPC UA, CAD to CAM automation, and web integration using Python.">
     
     <!-- Fonts -->
@@ -66,7 +66,7 @@
         <section class="project-hero">
             <div class="container">
                 <div class="project-hero-content">
-                    <h1 class="project-hero-title">Cloud Based Manufacturing via OPCUA (In Progress)</h1>
+                    <h1 class="project-hero-title">Automated Process Planning for Manufacturing as a Service</h1>
                     <p class="project-hero-subtitle">
                         Developing a cloud-based MaaS system to automate manufacturing service requests through OPC UA, CAD to CAM automation, and web integration using Python.
                     </p>
@@ -114,8 +114,8 @@
                                     <div class="project-description">
                                         <h3 style="color: var(--green); margin-bottom: 15px; font-size: var(--fz-xl);">Cloud Manufacturing Platform</h3>
                                         <p style="color: var(--lightest-slate); font-size: var(--fz-lg); line-height: 1.6; margin-bottom: 30px;">
-                                            Developed a cloud-based system that automates manufacturing from start to finish. Upload a 3D design file, 
-                                            and the system automatically generates machine instructions, communicates with machines on the shop floor, 
+                                            Developed a cloud-based system that automates manufacturing from start to finish. Upload a STEP AP 242 CAD file, 
+                                            and the system automatically generates machine instructions, communicates with machines on the shop floor via OPC UA, 
                                             and provides users with manufacture quotation. 
                                         </p>
                                     </div>
@@ -164,30 +164,30 @@
                                             <i class="bullet-icon fas fa-cube"></i>
                                             <div class="bullet-content">
                                                 <div class="bullet-title">CAD/CAM Automation</div>
-                                                <p class="bullet-desc">Automation of transistion between CAD and CAM for manufacturing</p>
+                                                <p class="bullet-desc">Automation of transistion between CAD and CAM for manufacturing to increase efficiency</p>
                                             </div>
                                         </li>
                                         <li class="bullet-item">
                                             <i class="bullet-icon fas fa-expand-arrows-alt"></i>
                                             <div class="bullet-content">
                                                 <div class="bullet-title">Manufacturing as a Service</div>
-                                                <p class="bullet-desc">On-demand manufacturing services and quotation</p>
+                                                <p class="bullet-desc">On-demand manufacturing services and quotation while making manufacturing more accessible customers</p>
                                             </div>
                                         </li>
                                     </ul>
 
                                     <!-- System Architecture -->
-                                    <!-- <div class="modern-image-grid">
+                                    <div class="modern-image-grid">
                                         <div class="modern-image-item">
                                             <div class="modern-image-container">
-                                                <img src="images/OPCUACloud.png" alt="System Architecture">
+                                                <img src="images/system_architectureV2.png" alt="System Architecture">
                                             </div>
                                             <div class="modern-image-caption">
                                                 <h4>☁️ Cloud MaaS Architecture</h4>
                                                 <p>Complete manufacturing automation platform</p>
                                             </div>
                                         </div>
-                                    </div> -->
+                                    </div>
                                 </div>
                             </div>
 
@@ -212,11 +212,88 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- WEBSITE IMAGES Section -->
+                            <div class="whr-section">
+                                <div class="whr-section-header">
+                                    <div class="whr-section-number">03</div>
+                                    <h2 class="whr-section-title">Website Interface</h2>
+                                </div>
+                                <div class="whr-section-content">
+                                    <div class="image-slider-container">
+                                        <div class="image-slider">
+                                            <div class="slider-track" id="websiteSliderTrack">
+                                                <!-- Slide 1: Main Interface -->
+                                                <div class="slide active">
+                                                    <div class="slide-image-container">
+                                                        <img src="images/web1.png" alt="Web Application Main Interface" class="slide-image">
+                                                    </div>
+                                                    <div class="slide-caption">
+                                                        <h4>Main Web Interface</h4>
+                                                        <p>User-friendly web interface for manufacturing service requests and system management</p>
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- Slide 2: CAD Upload -->
+                                                <div class="slide">
+                                                    <div class="slide-image-container">
+                                                        <img src="images/cad_upload_new.png" alt="CAD File Upload Interface" class="slide-image">
+                                                    </div>
+                                                    <div class="slide-caption">
+                                                        <h4>CAD File Upload</h4>
+                                                        <p>Intuitive interface for uploading STEP AP 242 CAD files to initiate manufacturing requests</p>
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- Slide 3: Additional Interface -->
+                                                <div class="slide">
+                                                    <div class="slide-image-container">
+                                                        <img src="images/6.png" alt="Web Application Interface" class="slide-image">
+                                                    </div>
+                                                    <div class="slide-caption">
+                                                        <h4>Estimate and Operation Generation Page</h4>
+                                                        <p>Displays the cost and time estimation for the manufacturing process along with the generated operations and parameters</p>
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- Slide 4: Progress Tracking -->
+                                                <div class="slide">
+                                                    <div class="slide-image-container">
+                                                        <img src="images/progress_tracker_new.png" alt="Progress Tracking Interface" class="slide-image">
+                                                    </div>
+                                                    <div class="slide-caption">
+                                                        <h4>Progress Tracking</h4>
+                                                        <p>Real-time tracking of manufacturing requests from submission to completion</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Navigation Controls -->
+                                            <div class="slider-controls">
+                                                <button class="slider-btn prev-btn" id="websitePrevBtn" aria-label="Previous image">
+                                                    <i class="fas fa-chevron-left"></i>
+                                                </button>
+                                                <button class="slider-btn next-btn" id="websiteNextBtn" aria-label="Next image">
+                                                    <i class="fas fa-chevron-right"></i>
+                                                </button>
+                                            </div>
+                                            
+                                            <!-- Dots Indicator -->
+                                            <div class="slider-dots">
+                                                <span class="dot active" data-slide="0" aria-label="Slide 1"></span>
+                                                <span class="dot" data-slide="1" aria-label="Slide 2"></span>
+                                                <span class="dot" data-slide="2" aria-label="Slide 3"></span>
+                                                <span class="dot" data-slide="3" aria-label="Slide 4"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         
                             <!-- HOW Section -->
                             <div class="whr-section">
                                 <div class="whr-section-header">
-                                    <div class="whr-section-number">03</div>
+                                    <div class="whr-section-number">04</div>
                                     <h2 class="whr-section-title">How</h2>
                                 </div>
                                 <div class="whr-section-content">
@@ -266,7 +343,7 @@
                                                 <li>Algorithim for operation sequence optimization</li>
                                             </ul>
                                         </div>
-                                        <div class="spec-card" data-category="Current">
+                                        <div class="spec-card" data-category="Completed">
                                             <h3 class="spec-title">Web OPC UA Server (Phase 2)</h3>
                                             <ul class="spec-list">
                                                 <li>Web application development</li>
@@ -276,7 +353,7 @@
                                                 <li>Secure data exchange framework</li>
                                             </ul>
                                         </div>
-                                        <div class="spec-card" data-category="Planned">
+                                        <div class="spec-card" data-category="Completed">
                                             <h3 class="spec-title">System Integration (Phase 3)</h3>
                                             <ul class="spec-list">
                                                 <li>CAPP to OPC UA server integration</li>
@@ -285,26 +362,13 @@
                                             </ul>
                                         </div>
                                     </div>
-
-                                    <!-- Implementation Image -->
-                                    <!-- <div class="modern-image-grid">
-                                        <div class="modern-image-item">
-                                            <div class="modern-image-container">
-                                                <img src="images/OPCUACloud.png" alt="Cloud Infrastructure">
-                                            </div>
-                                            <div class="modern-image-caption">
-                                                <h4>🔧 Development Architecture</h4>
-                                                <p>CAPP automation complete, OPC UA server in development</p>
-                                            </div>
-                                        </div>
-                                    </div> -->
                                 </div>
                             </div>
                         
                             <!-- RESULT Section -->
                             <div class="whr-section">
                                 <div class="whr-section-header">
-                                    <div class="whr-section-number">04</div>
+                                    <div class="whr-section-number">05</div>
                                     <h2 class="whr-section-title">Current Result</h2>
                                 </div>
                                 <div class="whr-section-content">

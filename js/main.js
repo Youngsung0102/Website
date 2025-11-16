@@ -535,6 +535,10 @@
             initImageSlider('aroaSliderTrack', 'aroaPrevBtn', 'aroaNextBtn');
         }
         
+        if (document.getElementById('websiteSliderTrack')) {
+            initImageSlider('websiteSliderTrack', 'websitePrevBtn', 'websiteNextBtn');
+        }
+        
         // Initial calls
         handleNavScroll();
         revealElements();
